@@ -1,0 +1,11 @@
+version: 2
+
+models:
+
+  - name: dim_products
+    description: "Overview of all products and relevant info (pageview, orders, last order, last page view, etc)"  
+    columns:
+    - name: product_id
+      tests:
+      - unique
+      - not_null

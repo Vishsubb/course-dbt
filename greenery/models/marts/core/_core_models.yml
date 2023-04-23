@@ -1,0 +1,27 @@
+version: 2
+
+models:
+
+  - name: dim_users
+    description: "Overview of all users"
+    columns:
+    - name: user_id
+      tests:
+      - unique
+      - not_null
+    - name: phone_number
+      tests:
+      - unique
+      - not_null      
+
+
+  - name: fact_orders
+    description: "Overview of all orders"
+    columns:
+    - name: order_id
+      tests:
+      - unique
+      - not_null
+    - name: order_total
+      tests:
+      - positive_values
