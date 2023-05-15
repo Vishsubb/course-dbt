@@ -1,0 +1,18 @@
+models:
+  - name: int_session_agg
+    description: ""
+    columns:
+      - name: session_id
+        description: ""
+
+      - name: page_views
+        description: ""
+
+      - name: add_to_carts
+        description: ""
+
+      - name: checkouts
+        description: ""
+
+      - name: package_shippeds
+        description: ""
